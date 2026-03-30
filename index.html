@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZerionMC - Minecraft Minigames Server</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo.png" alt="ZerionMC Logo" class="logo-img">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#shop" class="nav-link">Shop</a></li>
+                    <li><a href="#impressum" class="nav-link">Impressum</a></li>
+                    <li class="theme-toggle">
+                        <button id="theme-toggle-btn" class="theme-btn" aria-label="Theme wechseln">
+                            <span class="theme-icon">🌙</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="page active">
+            <div class="hero">
+                <h1>Willkommen bei ZerionMC</h1>
+                <p>Dein Minecraft Minigames Server für unvergessliche Momente mit Freunden!</p>
+                <button class="cta-button" onclick="navigateToPage('about')">Mehr erfahren</button>
+            </div>
+            
+            <div class="container">
+                <div class="home-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎮</div>
+                        <h3>Minigames</h3>
+                        <p>Spiele spannende Minigames mit deinen Freunden auf privaten Servern</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>Gemeinschaft</h3>
+                        <p>Werde Teil einer freundlichen Community und finde neue Freunde</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Schnelle Server</h3>
+                        <p>Genieße lag-freies Spielen auf unseren optimierten Servern</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Ränge & Belohnungen</h3>
+                        <p>Schalte exklusive Features und Vorteile frei</p>
+                    </div>
+                </div>
+                
+                <div class="stats-section">
+                    <h2>Unsere Server in Zahlen</h2>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Community Mitglieder</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Minigames</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Online</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">99.9%</div>
+                            <div class="stat-label">Uptime</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cta-section">
+                    <h2>Bereit für das Abenteuer?</h2>
+                    <p>Tritt unserer Community bei und erlebe Minecraft wie nie zuvor!</p>
+                    <div class="cta-buttons">
+                        <button class="cta-button" onclick="navigateToPage('shop')">Jetzt Rang kaufen</button>
+                        <button class="cta-button secondary" onclick="navigateToPage('about')">Mehr erfahren</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="page">
+            <div class="container">
+                <h2>Über Uns</h2>
+                <div class="about-content">
+                    <p>Wir sind ein Minecraft Server, auf dem du Minigames mit deinen Freunden auf deinem eigenen kleinen Server spielen kannst! Erlebe spannende Abenteuer und knüpfe neue Freundschaften in einer freundlichen Community.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <h3>🎮 Minigames</h3>
+                            <p>Spiele verschiedene Minigames mit deinen Freunden</p>
+                        </div>
+                        <div class="feature">
+                            <h3>👥 Kleine Server</h3>
+                            <p>Genieße das Spiel auf privaten kleinen Servern</p>
+                        </div>
+                        <div class="feature">
+                            <h3>🌟 Community</h3>
+                            <p>Treffe neue Freunde und werde Teil unserer Community</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="shop" class="page">
+            <div class="container">
+                <h2>Shop</h2>
+                <div class="shop-content">
+                    <div class="rank-card">
+                        <h3>Premium</h3>
+                        <div class="price">€9.99</div>
+                        <ul class="features-list">
+                            <li>✅ Schnellere Server</li>
+                            <li>✅ Exklusive Features</li>
+                            <li>✅ Premium Chat Badge</li>
+                            <li>✅ Priority Support</li>
+                        </ul>
+                        <button class="buy-button">Jetzt kaufen</button>
+                    </div>
+                    <div class="rank-card featured">
+                        <div class="popular-badge">Beliebt</div>
+                        <h3>Ultra</h3>
+                        <div class="price">€19.99</div>
+                        <ul class="features-list">
+                            <li>✅ Schnellste Server</li>
+                            <li>✅ Alle Premium Features</li>
+                            <li>✅ Ultra Chat Badge</li>
+                            <li>✅ 24/7 Support</li>
+                        </ul>
+                        <button class="buy-button">Jetzt kaufen</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="impressum" class="page">
+            <div class="container">
+                <h2>Impressum</h2>
+                <div class="impressum-content">
+                    <div class="legal-info">
+                        <h3>Angaben gemäß § 5 TMG</h3>
+                        <p><strong>Betreiber:</strong> ZerionMC</p>
+                        <p><strong>Adresse:</strong> Musterstraße 123<br>12345 Musterstadt</p>
+                        <p><strong>E-Mail:</strong> support@zerionmc.de</p>
+                        <p><strong>Website:</strong> www.zerionmc.de</p>
+                    </div>
+                    <div class="disclaimer">
+                        <h3>Haftungsausschluss</h3>
+                        <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ZerionMC. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
